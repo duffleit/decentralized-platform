@@ -1,0 +1,5 @@
+cluster:
+  name: platform-team-a
+  masterNodes: 3
+  workerNodes: 3
+  version: v1.21.1
