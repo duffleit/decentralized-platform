@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: team-a-workloads
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/duffleit/decentralized-platform.git'
+    path: workload
+    targetRevision: HEAD
+  destination:
+    server: 'https://172.20.0.3:6443'

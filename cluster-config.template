@@ -1,0 +1,21 @@
+kubectl apply -f - <<EOF
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    argocd.argoproj.io/secret-type: cluster
+  name: platform-team-a-secret
+type: Opaque
+stringData:
+  config: |
+    {
+      "tlsClientConfig": {
+        "insecure": false,
+        "caData": "base64",
+        "certData": "base64",
+        "keyData": "base64"
+      }
+    }
+  name: c1
+  server: https://172.20.0.3:6443
+EOF
