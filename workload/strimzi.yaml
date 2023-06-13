@@ -6,7 +6,7 @@ metadata:
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: Strimzi-Quota
+  name: strimzi-quota
   namespace: strimzi
 spec:
   hard:
@@ -19,7 +19,7 @@ spec:
 apiVersion: v1
 kind: LimitRange
 metadata:
-  name: Strimzi-Limitrange
+  name: strimzi-limitrange
   namespace: strimzi
 spec:
   limits:
