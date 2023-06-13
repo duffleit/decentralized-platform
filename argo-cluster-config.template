@@ -16,6 +16,6 @@ stringData:
         "keyData": "base64"
       }
     }
-  name: c1
+  name: team-a
   server: https://172.20.0.3:6443
 EOF
